@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Green 복지재단</title>
@@ -29,84 +30,106 @@
 				</ul>
 			</nav>
 		</header>
-
-		<div id="subMenu">
-			<ul >
-				<li><a href="#">설립취지</a></li>
-				<li><a href="#">연혁</a></li>
-				<li><a href="#">찾아오시는길</a></li>
-			</ul>
-			<ul >
-				<li><a href="#">국내후원</a></li>
-				<li><a href="#">국외후원</a></li>
-				<li><a href="#">맞춤후원</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">서식자료실</a></li>
-				<li><a href="#">사진자료실</a></li>
-				<li><a href="#">후원양식</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">웹진</a></li>
-				<li><a href="#">보고서</a></li>
-				<li><a href="#">나의 후원</a></li>
-			</ul>
-		</div>
-		<!--div#subMenu-->
-
-
-		<div id="slideImg">
-			<div id="slideText">
-				<span>
-					함께하는 재단 이야기<br>
-					연예인과 함께하는 콘서트<br>
-					어린이에게 꿈과 희망을
-				</span>
+		<div id="subMenuBg">
+			<div id="subMenuArea">
+				<ul class="subMenu">
+					<li><a href="#">설립취지</a></li>
+					<li><a href="#">연혁</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+				</ul>
+				<ul class="subMenu">
+					<li><a href="#">국내후원</a></li>
+					<li><a href="#">국외후원</a></li>
+					<li><a href="#">맞춤후원</a></li>
+				</ul>
+				<ul class="subMenu">
+					<li><a href="#">서식자료실</a></li>
+					<li><a href="#">사진자료실</a></li>
+					<li><a href="#">후원양식</a></li>
+				</ul>
+				<ul class="subMenu">
+					<li><a href="#">웹진</a></li>
+					<li><a href="#">보고서</a></li>
+					<li><a href="#">나의 후원</a></li>
+				</ul>
 			</div>
+			<!--div#subMenuArea-->
+		</div>
+
+		<div id="slideshow">
+			<div id="slideFrame">
+				<a href="#" id="first">
+					<img src="images/slideshow_01.png" alt="슬라이드1">
+					<span>함께하는 재단 이야기</span>
+				</a>
+				<a href="#" id="second">
+					<img src="images/slideshow_02.jpg" alt="슬라이드2">
+					<span>연예인과 함께하는 콘서트</span>
+				</a>
+				<a href="#" id="third">
+					<img src="images/slidshow_03.jpg" alt="슬라이드3">
+					<span>어린이에게 꿈과 희망을</span>
+				</a>
+			</div>
+			<!--div#slideFrame-->
 		</div>
 		<!--slideImg-->
-		<main id="main">
-			<div id="mainLayout">
-				<div id="bbs">
-					<button type="button">공지사항</button>
-					<table>
-						<tr>
-							<td>2019년 후원할 후원자를 찾습니다 </td>
-							<td> 2018-10-19</td>
-						</tr>
-						<tr>
-							<td>입금자를 찾습니다.</td>
-							<td> 2017-10-10</td>
-						</tr>
-						<tr>
-							<td>5월 런칭 이벤트 회원 모집 </td>
-							<td> 2017-10-06</td>
-						</tr>
-						<tr>
-							<td>1+1 행사를 진행합니다.</td>
-							<td>2017-09-20</td>
-						</tr>
-					</table>
-				</div>
-				<!--div#bbs-->
-				<div id="gallery">
 
-					<button type="button">갤러리</button>
-					<div id="galleryFlex">
-						<img src="images/gallery_01.jpg" alt="이미지1">
-						<img src="images/gallery_02.jpg" alt="이미지2">
-						<img src="images/gallery_03.jpg" alt="이미지3">
-					</div>
-					<!--div#galleryFlex-->
-				</div>
-				<!--div#gallery-->
-				<div id="banner">
-					<img src="images/banner.png" alt="배너" width="300">
-				</div>
-				<!--div#banner-->
+		<main id="main">
+			<div id="bbs">
+				<button type="button">공지사항</button>
+				<table>
+					<tr>
+						<td onclick="fnPopup()">2019년 후원할 후원자를 찾습니다 </td>
+						<td> 2018-10-19</td>
+					</tr>
+					<tr>
+						<td>입금자를 찾습니다.</td>
+						<td> 2017-10-10</td>
+					</tr>
+					<tr>
+						<td>5월 런칭 이벤트 회원 모집 </td>
+						<td> 2017-10-06</td>
+					</tr>
+					<tr>
+						<td>1+1 행사를 진행합니다.</td>
+						<td>2017-09-20</td>
+					</tr>
+				</table>
 			</div>
-			<!--mainLayout-->
+			<!--div#bbs-->
+			<div id="bbsGallery">
+				<button type="button">갤러리</button>
+				<table>
+					<tr>
+						<td>
+							<a href="#">
+								<img src="images/gallery_01.jpg" alt="이미지1" width="100">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<img src="images/gallery_02.jpg" alt="이미지2" width="100">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<img src="images/gallery_03.jpg" alt="이미지3" width="100">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- div#gallery-->
+			<div id="banner">
+				<a href="#">
+					<img src="images/benner_02.jpg" alt="배너" width="300">
+				</a>
+			</div>
+			<!--div#banner -->
+
 		</main>
+
 		<footer id="footer">
 			<div id="footerLogo">
 				<img src="images/Logo_Green_Bottom.png" alt="하단로고" width="200">
@@ -130,8 +153,26 @@
 			</div>
 			<!--div#familySite-->
 		</footer>
+	</div> <!-- div#wrap -->
+	<div id="layerPopupBg">
+		<div id="popup">
+			<h1>[후원마당]</h1>
+			<h3>2019년 그린재단을 후원할 후원자를 찾습니다.</h3>
+			<ul>
+				<li>- 후원문의 : 02-222-2222</li>
+				<li>- 후원통장 : 국민은행 1111-1111-11111</li>
+				<li>- 후원금액 : 1만원부터 ~</li>
+			</ul>
+			<button type="button" onclick="fnClose()">닫기</button>
+		</div>
+		<!--div#popup-->
 	</div>
+	<!--layerPopupBy-->
 
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 
-</body></html>
+</body>
+
+</html>
